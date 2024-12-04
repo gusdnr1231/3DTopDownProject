@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fadb10efbebf0a4b9bf0b6befa1c1f6, type: 3}
+  m_Name: SniperRifle
+  m_EditorClassIdentifier: 
+  gunTrmName: weap_sniper_rifle
+  recoilPower: 5
+  reloadSpeed: 0.5
+  equipSpeed: 1
+  shootType: 0
+  fireRate: 1
+  camDistance: 8
+  spreadAmount: 0
+  maxSpreadAmount: 0.3
+  spreadIncRate: 0.15
+  spreadCooldown: 1
+  maxAmmo: 15
+  shootingRange: 30
+  bulletSpeed: 80
+  bulletPerShot: 1
+  impactForce: 100
+  damage: 20
+  animationLayer: 3
+  grabType: 1
+  leftHandPosition: {x: 0.435, y: 0.145, z: 0.07}
+  leftHandRotation: {x: -173, y: 250, z: -100.9}
+  leftHandHintPosition: {x: -0.163, y: 0.502, z: 0.227}

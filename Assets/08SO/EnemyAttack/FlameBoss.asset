@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b23f08d2ae4cba14087c1ed36193d82b, type: 3}
+  m_Name: FlameBoss
+  m_EditorClassIdentifier: 
+  mBehaviorSource:
+    behaviorName: FlameBoss
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: '{"EntryTask":{"Type":"BehaviorDesigner.Runtime.Tasks.EntryTask","NodeData":{"Offset":"(140,98.8)"},"ID":0,"Name":"Entry","Instant":true},"RootTask":{"Type":"BehaviorDesigner.Runtime.Tasks.Repeater","NodeData":{"Offset":"(1.90734863E-06,118.800011)"},"ID":1,"Name":"Repeater","Instant":true,"SharedIntcount":{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":null,"Int32mValue":0},"SharedBoolrepeatForever":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true},"SharedBoolendOnFailure":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Selector","NodeData":{"Offset":"(4.17750549,156.947327)"},"ID":2,"Name":"Selector","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-548.3209,157.0496)"},"ID":3,"Name":"\ucda9\uc804
+        \uc2dc\ud000\uc2a4","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"EnergyLowCondition","NodeData":{"Offset":"(-198.557236,153.087585)","Comment":"\uc5d0\ub108\uc9c0\uac00
+        5 \uc774\ud558\uc778\uc9c0 \ud655\uc778"},"ID":4,"Name":"\ubcf4\uc720 \uc5d0\ub108\uc9c0
+        \uc218\uce58 \uac80\uc0ac","Instant":true,"SinglelowValue":5,"SharedFloatenergy":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"energy","IsShared":true,"SinglemValue":0}},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-14.719717,149.1011)"},"ID":5,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"PlayAnimationAction","NodeData":{"Offset":"(-171.53833,161.538452)","Comment":"Idle
+        \uc7ac\uc0dd"},"ID":6,"Name":"Play Animation Action","Instant":true,"SharedEnemyBaseenemy":{"Type":"SharedEnemyBase","Name":"enemy","IsShared":true},"AnimatorParamSOparam":0},{"Type":"ChargeEnergyAction","NodeData":{"Offset":"(-9.37027,156.133118)"},"ID":7,"Name":"\uc5d0\ub108\uc9c0
+        \ucda9\uc804","Instant":true,"SharedFloatenergy":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"energy","IsShared":true,"SinglemValue":0},"SinglemaxEnergy":100,"SinglechargingTime":20}]}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-311.034271,169.3417)"},"ID":8,"Name":"\ucd94\uaca9
+        \uc2dc\ud000\uc2a4","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"SetTimerAction","NodeData":{"Offset":"(-103.95578,147.5987)","Comment":"\ucd94\uaca9
+        \uc2dc\uc791 \uc2dc\uac04 \uae30\ub85d"},"ID":9,"Name":"Set Timer Action","Instant":true,"SharedFloatstartTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"timer","IsShared":true,"SinglemValue":0}},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(34.8676147,146.422241)"},"ID":10,"Name":"Sequence","Instant":true,"AbortTypeabortType":"Self","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Inverter","NodeData":{"Offset":"(-81.9624939,175.833557)"},"ID":11,"Name":"Inverter","Instant":true,"Children":[{"Type":"InDistanceCondition","NodeData":{"Offset":"(2.94112015,96.47064)"},"ID":12,"Name":"In
+        Distance Condition","Instant":true,"SharedTransformTarget":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":"target","IsShared":true},"SharedFloatrange":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"meleeAttackRange","IsShared":true,"SinglemValue":1.6}}]},{"Type":"InTimerCondition","NodeData":{"Offset":"(55.45578,167.01001)","Comment":"\ucd94\uc801
+        \uc2e4\ud589 \uc2dc\uac04 \uacc4\uc0b0"},"ID":13,"Name":"In Timer Condition","Instant":true,"SharedFloatstartTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"timer","IsShared":true,"SinglemValue":0},"SinglewaitTime":4},{"Type":"PlayAnimationAction","NodeData":{"Offset":"(253.8207,175.926941)","Comment":"Walk
+        \uc7ac\uc0dd"},"ID":14,"Name":"Play Animation Action","Instant":true,"SharedEnemyBaseenemy":{"Type":"SharedEnemyBase","Name":"enemy","IsShared":true},"AnimatorParamSOparam":1},{"Type":"MoveToTargetAction","NodeData":{"Offset":"(444.505432,193.8878)"},"ID":15,"Name":"Move
+        To Target Action","Instant":true,"SharedEnemyBaseenemy":{"Type":"SharedEnemyBase","Name":"enemy","IsShared":true},"SharedTransformtarget":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":"target","IsShared":true},"SinglereCalcPeriod":0.5}]}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Selector","NodeData":{"Offset":"(801.8322,110.827721)"},"ID":16,"Name":"\uacf5\uaca9
+        \uc140\ub809\ud130","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-527.9557,743.685059)"},"ID":17,"Name":"\ucfe8\ub2e4\uc6b4
+        \uc2dc\ud000\uc2a4","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"IsCooldownCondition","NodeData":{"Offset":"(-449.497559,175.857)"},"ID":18,"Name":"Is
+        Cooldown Condition","Instant":true,"SharedFloatcooldown":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"cooldown","IsShared":true,"SinglemValue":0}},{"Type":"RotateToTargetAction","NodeData":{"Offset":"(-298.235046,177.6466)"},"ID":19,"Name":"\uc790\ub3d9
+        \ud68c\uc804 \ud65c\uc131\ud654","Instant":true,"SharedEnemyBaseenemy":{"Type":"SharedEnemyBase","Name":"enemy","IsShared":true},"BooleanIsAcitveAutoRotate":true},{"Type":"StopMovingAction","NodeData":{"Offset":"(-173.034866,181.67395)"},"ID":20,"Name":"Stop
+        Moving Action","Instant":true,"SharedEnemyBaseenemy":{"Type":"SharedEnemyBase","Name":"enemy","IsShared":true}},{"Type":"PlayAnimationAction","NodeData":{"Offset":"(-3.84637451,180.769653)","Comment":"Idle
+        \uc7ac\uc0dd"},"ID":21,"Name":"Play Animation Action","Instant":true,"SharedEnemyBaseenemy":{"Type":"SharedEnemyBase","Name":"enemy","IsShared":true},"AnimatorParamSOparam":2},{"Type":"WaitForAction","NodeData":{"Offset":"(144.851517,183.896179)","Comment":"\ucfe8\ub2e4\uc6b4
+        \uc885\ub8cc \ub300\uae30"},"ID":22,"Name":"Wait For Action","Instant":true,"WaitTypewaitType":"Cooldown","SharedFloatcooldown":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"cooldown","IsShared":true,"SinglemValue":0},"SharedBoolisAnimationEnd":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"isAnimationEnd","IsShared":true,"BooleanmValue":false}},{"Type":"RotateToTargetAction","NodeData":{"Offset":"(278.237244,183.771729)"},"ID":23,"Name":"\uc790\ub3d9
+        \ud68c\uc804 \ube44\ud65c\uc131\ud654","Instant":true,"SharedEnemyBaseenemy":{"Type":"SharedEnemyBase","Name":"enemy","IsShared":true},"BooleanIsAcitveAutoRotate":false}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(8.472599,202.256271)"},"ID":24,"Name":"\uadfc\uc811
+        \uacf5\uaca9 \uc2dc\ud000\uc2a4","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"InDistanceCondition","NodeData":{"Offset":"(-29.7019043,175.37767)"},"ID":25,"Name":"In
+        Distance Condition","Instant":true,"SharedTransformTarget":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":"target","IsShared":true},"SharedFloatrange":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"meleeAttackRange","IsShared":true,"SinglemValue":1.6}},{"Type":"BehaviorDesigner.Runtime.Tasks.Inverter","NodeData":{"Offset":"(131.77919,191.303635)"},"ID":26,"Name":"Inverter","Instant":true,"Children":[{"Type":"EnergyLowCondition","NodeData":{"Offset":"(-4.44448471,124.444473)"},"ID":27,"Name":"Energy
+        Low Condition","Instant":true,"SinglelowValue":6,"SharedFloatenergy":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"energy","IsShared":true,"SinglemValue":0}}]},{"Type":"StopMovingAction","NodeData":{"Offset":"(298.44635,190.562714)"},"ID":28,"Name":"Stop
+        Moving Action","Instant":true,"SharedEnemyBaseenemy":{"Type":"SharedEnemyBase","Name":"enemy","IsShared":true}},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(450.000183,200)"},"ID":29,"Name":"\ud3c9\ud0c0
+        \uc2dc\ud000\uc2a4","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"SetFloatAction","NodeData":{"Offset":"(-668.044739,266.858551)"},"ID":30,"Name":"Set
+        Float Action","Instant":true,"SharedFloattarget":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"energy","IsShared":true,"SinglemValue":0},"Operationop":"Sub","Singlevalue":6},{"Type":"BehaviorDesigner.Runtime.Tasks.RandomSelector","NodeData":{"Offset":"(-522.1559,272.4943)"},"ID":31,"Name":"\ud3c9\ud0c0
+        \ub79c\ub364 \uc140\ub809\ud2b8","Instant":true,"Int32seed":0,"BooleanuseSeed":false,"AbortTypeabortType":"None","Children":[{"Type":"SetAnimationParamAction","NodeData":{"Offset":"(-82.3075562,136.923035)"},"ID":32,"Name":"\uacf5\uaca9
+        1\ubc88","Instant":true,"SharedEnemyBaseenemy":{"Type":"SharedEnemyBase","Name":"enemy","IsShared":true},"AnimatorParamSOparam":3,"ParamValuevalue":{"BooleanboolValue":false,"SinglefloatValue":0,"Int32intValue":0}},{"Type":"SetAnimationParamAction","NodeData":{"Offset":"(84.85571,135.913574)"},"ID":33,"Name":"\uacf5\uaca9
+        2\ubc88","Instant":true,"SharedEnemyBaseenemy":{"Type":"SharedEnemyBase","Name":"enemy","IsShared":true},"AnimatorParamSOparam":4,"ParamValuevalue":{"BooleanboolValue":false,"SinglefloatValue":0,"Int32intValue":1}}]},{"Type":"PlayAnimationAction","NodeData":{"Offset":"(-337.6928,266.153564)","Comment":"Attack
+        \uc7ac\uc0dd"},"ID":34,"Name":"Play Animation Action","Instant":true,"SharedEnemyBaseenemy":{"Type":"SharedEnemyBase","Name":"enemy","IsShared":true},"AnimatorParamSOparam":5},{"Type":"WaitForAction","NodeData":{"Offset":"(-155.228455,271.875763)","Comment":"\uacf5\uaca9
+        \uc560\ub2c8\uba54\uc774\uc158 \uc885\ub8cc \ub300\uae30"},"ID":35,"Name":"Wait
+        For Action","Instant":true,"WaitTypewaitType":"Animation","SharedFloatcooldown":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"cooldown","IsShared":true,"SinglemValue":0},"SharedBoolisAnimationEnd":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"isAnimationEnd","IsShared":true,"BooleanmValue":false}},{"Type":"SetFloatAction","NodeData":{"Offset":"(10.934391,272.857422)"},"ID":36,"Name":"Set
+        Float Action","Instant":true,"SharedFloattarget":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"cooldown","IsShared":true,"SinglemValue":0},"Operationop":"Assign","Singlevalue":0.5}]}]},{"Type":"BehaviorDesigner.Runtime.Tasks.RandomSelector","NodeData":{"Offset":"(996.376343,203.303909)"},"ID":37,"Name":"\uc6d0\uac70\ub9ac
+        \uacf5\uaca9 \uc140\ub809\ud130","Instant":true,"Int32seed":0,"BooleanuseSeed":false,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-101.577637,166.897766)","Collapsed":true},"ID":38,"Name":"\uc810\ud504
+        \uacf5\uaca9","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Inverter","NodeData":{"Offset":"(-143.472214,150.888519)"},"ID":39,"Name":"Inverter","Instant":true,"Children":[{"Type":"InDistanceCondition","NodeData":{"Offset":"(0,114.285713)"},"ID":40,"Name":"In
+        Distance Condition","Instant":true,"SharedTransformTarget":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":"target","IsShared":true},"SharedFloatrange":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"jumpAttackRange","IsShared":true,"SinglemValue":5}}]},{"Type":"StopMovingAction","NodeData":{"Offset":"(26.1904812,145)"},"ID":41,"Name":"Stop
+        Moving Action","Instant":true,"SharedEnemyBaseenemy":{"Type":"SharedEnemyBase","Name":null}},{"Type":"PlayAnimationAction","NodeData":{"Offset":"(206.19043,143.333069)","Comment":"Jump
+        \uc7ac\uc0dd"},"ID":42,"Name":"Play Animation Action","Instant":true,"SharedEnemyBaseenemy":{"Type":"SharedEnemyBase","Name":"enemy","IsShared":true},"AnimatorParamSOparam":6},{"Type":"JumpAttackAction","NodeData":{"Offset":"(379.514221,145.220245)"},"ID":43,"Name":"Jump
+        Attack Action","Instant":true,"SharedTransformtarget":{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":"target","IsShared":true},"SharedEnemyBaseenemy":{"Type":"SharedEnemyBase","Name":"enemy","IsShared":true},"SharedBoolisAnimationEnd":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"isAnimationEnd","IsShared":true,"BooleanmValue":false},"SinglejumpTime":1}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(168.455811,175.297791)"},"ID":44,"Name":"\uc218\ub958\ud0c4
+        \ud22c\ucc99","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"StopMovingAction","NodeData":{"Offset":"(-257.496033,181.259583)"},"ID":45,"Name":"Stop
+        Moving Action","Instant":true,"SharedEnemyBaseenemy":{"Type":"SharedEnemyBase","Name":null}},{"Type":"RotateToTargetAction","NodeData":{"Offset":"(-105.251007,194.202332)"},"ID":46,"Name":"Rotate
+        To Target Action","Instant":true,"SharedEnemyBaseenemy":{"Type":"SharedEnemyBase","Name":"enemy","IsShared":true},"BooleanIsAcitveAutoRotate":true},{"Type":"PlayAnimationAction","NodeData":{"Offset":"(61.4155273,196.202454)"},"ID":47,"Name":"Play
+        Animation Action","Instant":true,"SharedEnemyBaseenemy":{"Type":"SharedEnemyBase","Name":"enemy","IsShared":true},"AnimatorParamSOparam":7},{"Type":"WaitForAction","NodeData":{"Offset":"(197.415527,202.868958)"},"ID":48,"Name":"Wait
+        For Action","Instant":true,"WaitTypewaitType":"Animation","SharedFloatcooldown":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"cooldown","IsShared":true,"SinglemValue":0},"SharedBoolisAnimationEnd":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"isAnimationEnd","IsShared":true,"BooleanmValue":false}},{"Type":"RotateToTargetAction","NodeData":{"Offset":"(350.000244,200)"},"ID":49,"Name":"Rotate
+        To Target Action","Instant":true,"SharedEnemyBaseenemy":{"Type":"SharedEnemyBase","Name":"enemy","IsShared":true},"BooleanIsAcitveAutoRotate":false}]}]}]}]}]},"Variables":[{"Type":"SharedEnemyBase","Name":"enemy","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"isAnimationEnd","IsShared":true,"BooleanmValue":false},{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"isAlive","IsShared":true,"BooleanmValue":false},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"timer","IsShared":true,"SinglemValue":0},{"Type":"BehaviorDesigner.Runtime.SharedTransform","Name":"target","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"meleeAttackRange","IsShared":true,"SinglemValue":1.6},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"jumpAttackRange","IsShared":true,"SinglemValue":5},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"energy","IsShared":true,"SinglemValue":0},{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"cooldown","IsShared":true,"SinglemValue":0}]}'
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects:
+        - {fileID: 11400000, guid: e3816e3afb6b7fe4ebebdc26d6ff64e3, type: 2}
+        - {fileID: 11400000, guid: 9c898cc69a0688543b5a21d0b2c8d25a, type: 2}
+        - {fileID: 11400000, guid: e3816e3afb6b7fe4ebebdc26d6ff64e3, type: 2}
+        - {fileID: 11400000, guid: bd2d700d24b8031488fd004c244ddb96, type: 2}
+        - {fileID: 11400000, guid: bd2d700d24b8031488fd004c244ddb96, type: 2}
+        - {fileID: 11400000, guid: 1eb369c1f332e4244a67ea4ba036b40f, type: 2}
+        - {fileID: 11400000, guid: 7331cff3c6c557942bb8b10fbc8f2390, type: 2}
+        - {fileID: 11400000, guid: 0b97b3da311a6c946ba42e4eb4e6d88e, type: 2}
+        byteData: 
+        byteDataArray: 
+      Version: 1.7.10
